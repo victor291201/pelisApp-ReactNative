@@ -18,7 +18,7 @@ export default function Detail({movieFull,Cast}:Props) {
                 name="star-outline"
                 color="grey"
                 size={20}/>
-            <Text>
+            <Text style={{color:"black"}}>
             {`${movieFull.vote_average} - ${movieFull.genres.map(g=>g.name).join(", ")}`}
             </Text>
         </View>
@@ -26,7 +26,7 @@ export default function Detail({movieFull,Cast}:Props) {
             <Text style={{fontSize:20,marginTop:10,fontWeight:"bold",color:"black"}}>
                 Historia:
             </Text>
-            <Text>
+            <Text style={{color:"black"}}>
                 {movieFull.overview}
             </Text>
         </View>
@@ -34,7 +34,7 @@ export default function Detail({movieFull,Cast}:Props) {
             <Text style={{fontSize:20,marginTop:10,fontWeight:"bold",color:"black"}}>
                 Presupuesto:
             </Text>
-            <Text>
+            <Text style={{color:"black"}}>
                 {currencyFormatter.format(movieFull.budget,{format:"USD"})}
             </Text>
         </View>

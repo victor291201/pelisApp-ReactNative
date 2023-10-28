@@ -13,7 +13,7 @@ import { FlatList } from 'react-native-gesture-handler';
 export default function HorizontalSlider({movies, title}:Props) {
   return (
     <View style={{height:235, paddingTop:0,marginTop:0}}>
-        <Text style={{fontSize:25,fontWeight:"bold", paddingTop:0,marginTop:0}}>
+        <Text style={{fontSize:25,fontWeight:"bold", paddingTop:0,marginTop:0, color:"black"}}>
             {title}
         </Text>
         <FlatList
